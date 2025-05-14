@@ -1,0 +1,4 @@
+C:\Users\Linkdens\Source\Repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Debug\Saraff.Twain.DS.dll
+C:\Users\Linkdens\Source\Repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Debug\Saraff.Twain.DS.xml
+C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\obj\x64\Debug\Saraff.Twain.DS_x64.vcxproj.AssemblyReference.cache
+C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\obj\x64\Debug\Saraff.T.49685C8A.Up2Date

@@ -31,8 +31,11 @@
  */
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using Saraff.Twain.DS.BitmapSource;
 using Saraff.Twain.DS.Capabilities;
@@ -70,6 +73,7 @@ namespace Saraff.Twain.DS.DirectX {
     [Capability(typeof(Capabilities.IsRunningDataSourceCapability))]
     [Capability(typeof(Capabilities.CustomInterfaceGuidDataSourceCapability))]
     public sealed class MediaDataSource:BitmapDataSource {
+
         private readonly float _resolution=96f;
         private UI.DataSourceForm _form;
         private Queue<Bitmap> _images = null;

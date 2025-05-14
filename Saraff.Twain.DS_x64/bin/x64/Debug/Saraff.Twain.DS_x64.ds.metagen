@@ -1,0 +1,16 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Saraff.Twain.DS_x64, Version=0.0.*, Culture=고정 언어(고정 국가): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Saraff.Twain.DS, Version=1.0.4.675, Culture=neutral, PublicKeyToken=d59c866b4519678c: 
+	hash=None, flags=None
+Assembly System.Configuration.Install, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class SaraffTwainDS_x64.Installer1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Saraff.Twain.DS.DataSourceInstaller
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

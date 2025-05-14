@@ -41,11 +41,11 @@ using IoC = Saraff.Twain.DS.IoC;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Saraff.Twain.DS.DirectX")]
+[assembly: AssemblyTitle("AIOBIO.Twain.DS.DirectX")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SARAFF SOFTWARE")]
-[assembly: AssemblyProduct("Saraff DirectX DS")]
+[assembly: AssemblyCompany("AIOBIO SOFTWARE")]
+[assembly: AssemblyProduct("AIOBIO TWAIN DS")]
 [assembly: AssemblyCopyright("Copyright © SARAFF SOFTWARE 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
