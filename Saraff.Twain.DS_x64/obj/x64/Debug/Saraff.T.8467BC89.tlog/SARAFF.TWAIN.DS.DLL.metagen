@@ -1,0 +1,1823 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Saraff.Twain.DS, Version=1.0.4.675, Culture=neutral, PublicKeyToken=d59c866b4519678c: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Configuration.Install, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Saraff.IoC, Version=1.0.11.670, Culture=neutral, PublicKeyToken=941762d7e2681ad9: 
+	hash=None, flags=None
+Class Saraff.Twain.DS.AudioDataSource: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Saraff.Twain.DS.DataSource
+Class Saraff.Twain.DS.CapabilityEventArgs: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Saraff.Twain.DS.DataSourceCapability): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.DataSourceCapability Capability 'get set' : 
+  Methods:
+    get_Capability(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.DataSourceInstaller: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Configuration.Install.Installer
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface Saraff.Twain.DS.IIdentityProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Saraff.Twain.DS.Identity Identity 'get ' : 
+  Methods:
+    get_Identity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Saraff.Twain.DS.Identity: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Version Version 'get set' : 
+    System.String Company 'get set' : 
+    System.String ProductFamily 'get set' : 
+    System.String ProductName 'get set' : 
+  Methods:
+    get_Version(): PrivateScope, Public, HideBySig, SpecialName
+    set_Version(Version): PrivateScope, Public, HideBySig, SpecialName
+    get_Company(): PrivateScope, Public, HideBySig, SpecialName
+    set_Company(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ProductFamily(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProductFamily(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ProductName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProductName(String): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.ImageInfo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single XResolution 'get set' : 
+    Single YResolution 'get set' : 
+    Int32 ImageWidth 'get set' : 
+    Int32 ImageLength 'get set' : 
+    Int16[] BitsPerSample 'get set' : 
+    Int16 BitsPerPixel 'get set' : 
+    Boolean Planar 'get set' : 
+    Saraff.Twain.DS.TwPixelType PixelType 'get set' : 
+    Saraff.Twain.DS.TwCompression Compression 'get set' : 
+  Methods:
+    get_XResolution(): PrivateScope, Public, HideBySig, SpecialName
+    set_XResolution(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_YResolution(): PrivateScope, Public, HideBySig, SpecialName
+    set_YResolution(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageLength(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BitsPerSample(): PrivateScope, Public, HideBySig, SpecialName
+    set_BitsPerSample(Int16[]): PrivateScope, Public, HideBySig, SpecialName
+    get_BitsPerPixel(): PrivateScope, Public, HideBySig, SpecialName
+    set_BitsPerPixel(Int16): PrivateScope, Public, HideBySig, SpecialName
+    get_Planar(): PrivateScope, Public, HideBySig, SpecialName
+    set_Planar(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PixelType(): PrivateScope, Public, HideBySig, SpecialName
+    set_PixelType(TwPixelType): PrivateScope, Public, HideBySig, SpecialName
+    get_Compression(): PrivateScope, Public, HideBySig, SpecialName
+    set_Compression(TwCompression): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.ImageLayoutAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.RectangleF Frame 'get set' : 
+  Methods:
+    get_Frame(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.ImageMemXfer: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwCompression Compression 'get set' : 
+    UInt32 BytesPerRow 'get set' : 
+    UInt32 Columns 'get set' : 
+    UInt32 Rows 'get set' : 
+    UInt32 XOffset 'get set' : 
+    UInt32 YOffset 'get set' : 
+    Byte[] ImageData 'get set' : 
+    Boolean IsXferDone 'get set' : 
+  Methods:
+    get_Compression(): PrivateScope, Public, HideBySig, SpecialName
+    set_Compression(TwCompression): PrivateScope, Public, HideBySig, SpecialName
+    get_BytesPerRow(): PrivateScope, Public, HideBySig, SpecialName
+    set_BytesPerRow(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_Columns(): PrivateScope, Public, HideBySig, SpecialName
+    set_Columns(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_Rows(): PrivateScope, Public, HideBySig, SpecialName
+    set_Rows(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_XOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_XOffset(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_YOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_YOffset(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageData(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageData(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_IsXferDone(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsXferDone(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.MemXferBufferSizeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    UInt32 Value 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.SupportedDataCodesAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwDAT[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwDAT[] DataCodes 'get set' : 
+  Methods:
+    get_DataCodes(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.CapabilityAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type Type 'get set' : 
+  Methods:
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.DataSource: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.ComponentModel.Component
+  Interfaces:
+    Saraff.Twain.DS.IDataSource
+  Properties:
+    Saraff.Twain.DS.TwIdentity AppIdentity 'get set' : 
+    Saraff.Twain.DS.DataSourceCapability Item [Saraff.Twain.DS.TwCap] 'get ' : 
+    System.Collections.Generic.IEnumerable`1[Saraff.Twain.DS.TwCap] SupportedCapabilities 'get ' : 
+    System.Collections.Generic.IEnumerable`1[Saraff.Twain.DS.TwDAT] SupportedDataCodes 'get ' : 
+    System.Collections.Generic.IEnumerable`1[Saraff.Twain.DS.TwSX] SupportedXferMechs 'get ' : 
+    Saraff.Twain.DS.XferEnvironment XferEnvironment 'get ' : 
+    Saraff.Twain.DS.IoC.IInstanceFactory Factory 'get set' : 
+  Methods:
+    ProcessRequest(TwIdentity, TwDG, TwDAT, TwMSG, IntPtr): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_AppIdentity(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(TwCap): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportedCapabilities(): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportedDataCodes(): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportedXferMechs(): PrivateScope, Public, HideBySig, SpecialName
+    get_XferEnvironment(): PrivateScope, Public, HideBySig, SpecialName
+    get_Factory(): PrivateScope, Public, HideBySig, SpecialName
+    set_Factory(IInstanceFactory): PrivateScope, Public, HideBySig, SpecialName
+Struct Saraff.Twain.DS.DataSourceState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.DataSourceState Enabled = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.DataSourceState Ready = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.DataSourceState Transferring = 4 : Public, Static, Literal, HasDefault
+Class Saraff.Twain.DS.DataSourceAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type Type 'get set' : 
+    Saraff.Twain.DS.TwLanguage Language 'get set' : 
+    Saraff.Twain.DS.TwCountry Country 'get set' : 
+    Int32 MaxConnectionCount 'get set' : 
+    System.Type IdentityProvider 'get set' : 
+  Methods:
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    get_Language(): PrivateScope, Public, HideBySig, SpecialName
+    set_Language(TwLanguage): PrivateScope, Public, HideBySig, SpecialName
+    get_Country(): PrivateScope, Public, HideBySig, SpecialName
+    set_Country(TwCountry): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxConnectionCount(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxConnectionCount(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IdentityProvider(): PrivateScope, Public, HideBySig, SpecialName
+    set_IdentityProvider(Type): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.DataSourceCapabilityAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwCap, Saraff.Twain.DS.TwType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwCap Capability 'get set' : 
+    Saraff.Twain.DS.TwType Type 'get set' : 
+    Saraff.Twain.DS.TwOn Get 'get set' : 
+    Saraff.Twain.DS.TwOn GetCurrent 'get set' : 
+    Saraff.Twain.DS.TwOn GetDefault 'get set' : 
+    Saraff.Twain.DS.TwQC SupportedOperations 'get set' : 
+  Methods:
+    get_Capability(): PrivateScope, Public, HideBySig, SpecialName
+    get_Type(): PrivateScope, Public, HideBySig, SpecialName
+    get_Get(): PrivateScope, Public, HideBySig, SpecialName
+    set_Get(TwOn): PrivateScope, Public, HideBySig, SpecialName
+    get_GetCurrent(): PrivateScope, Public, HideBySig, SpecialName
+    set_GetCurrent(TwOn): PrivateScope, Public, HideBySig, SpecialName
+    get_GetDefault(): PrivateScope, Public, HideBySig, SpecialName
+    set_GetDefault(TwOn): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportedOperations(): PrivateScope, Public, HideBySig, SpecialName
+    set_SupportedOperations(TwQC): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.DataSourceException: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(Saraff.Twain.DS.TwRC, Saraff.Twain.DS.TwCC): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Saraff.Twain.DS.TwRC, Saraff.Twain.DS.TwCC, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwRC ReturnCode 'get set' : 
+    Saraff.Twain.DS.TwCC ConditionCode 'get set' : 
+  Methods:
+    get_ReturnCode(): PrivateScope, Public, HideBySig, SpecialName
+    get_ConditionCode(): PrivateScope, Public, HideBySig, SpecialName
+Interface Saraff.Twain.DS.IDataSource: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    ProcessRequest(TwIdentity, TwDG, TwDAT, TwMSG, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Saraff.Twain.DS.DataSourceCapability: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    Saraff.Twain.DS.DataSourceCapabilityAttribute CapabilityInfo 'get ' : 
+    Saraff.Twain.DS.IDataSource DataSource 'get set' : 
+    System.Object Value 'get set' : 
+  Events:
+    System.EventHandler`1[Saraff.Twain.DS.CapabilityEventArgs] CapabilityChanged: 
+    System.EventHandler`1[Saraff.Twain.DS.CapabilityEventArgs] CapabilityValueNeeded: 
+  Methods:
+    get_CapabilityInfo(): PrivateScope, Public, HideBySig, SpecialName
+    add_CapabilityChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CapabilityChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CapabilityValueNeeded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CapabilityValueNeeded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_DataSource(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataSource(IDataSource): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Saraff.Twain.DS.ImageDataSource: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Saraff.Twain.DS.DataSource
+Class Saraff.Twain.DS.DataSourceServices: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Interfaces:
+    Saraff.Twain.DS.IDataSource
+  Properties:
+    Saraff.Twain.DS.IDataSource Current 'get ' : 
+  Methods:
+    ProcessRequest(TwIdentity, TwDG, TwDAT, TwMSG, IntPtr): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Current(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Saraff.Twain.DS.SupportedGroupsAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwDG): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Saraff.Twain.DS.TwDG, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Version ProtocolVersion 'get set' : 
+    Saraff.Twain.DS.TwDG SupportedGroups 'get set' : 
+  Methods:
+    get_ProtocolVersion(): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportedGroups(): PrivateScope, Public, HideBySig, SpecialName
+Struct Saraff.Twain.DS.TwDG: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt32 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwDG Control = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDG Image = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDG Audio = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDG DSM2 = 268435456 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDG APP2 = 536870912 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDG DS2 = 1073741824 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwDAT: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwDAT Null = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Capability = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Event = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Identity = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Parent = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT PendingXfers = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT SetupMemXfer = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT SetupFileXfer = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Status = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT UserInterface = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT XferGroup = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT TwunkIdentity = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT CustomDSData = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT DeviceEvent = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT FileSystem = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT PassThru = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Callback = 16 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT StatusUtf8 = 17 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Callback2 = 18 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ImageInfo = 257 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ImageLayout = 258 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ImageMemXfer = 259 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ImageNativeXfer = 260 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ImageFileXfer = 261 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT CieColor = 262 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT GrayResponse = 263 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT RGBResponse = 264 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT JpegCompression = 265 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT Palette8 = 266 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ExtImageInfo = 267 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT IccProfile = 1025 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT ImageMemFileXfer = 1026 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDAT EntryPoint = 1027 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwMSG: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwMSG Null = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG Get = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetCurrent = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetDefault = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetFirst = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetNext = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG Set = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG Reset = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG QuerySupport = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG XFerReady = 257 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG CloseDSReq = 258 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG CloseDSOK = 259 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG DeviceEvent = 260 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG CheckStatus = 513 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG OpenDSM = 769 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG CloseDSM = 770 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG OpenDS = 1025 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG CloseDS = 1026 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG UserSelect = 1027 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG DisableDS = 1281 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG EnableDS = 1282 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG EnableDSUIOnly = 1283 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG ProcessEvent = 1537 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG EndXfer = 1793 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG StopFeeder = 1794 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG ChangeDirectory = 2049 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG CreateDirectory = 2050 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG Delete = 2051 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG FormatMedia = 2052 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetClose = 2053 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetFirstFile = 2054 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetInfo = 2055 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG GetNextFile = 2056 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG Rename = 2057 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG Copy = 2058 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG AutoCaptureDir = 2059 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG PassThru = 2305 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG RegisterCallback = 2306 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwMSG ResetAll = 2561 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwRC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwRC Success = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC Failure = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC CheckStatus = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC Cancel = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC DSEvent = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC NotDSEvent = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC XferDone = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC EndOfList = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC InfoNotSupported = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC DataNotAvailable = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC Busy = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwRC ScannerLocked = 11 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCC Success = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC Bummer = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC LowMemory = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC NoDS = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC MaxConnections = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC OperationError = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC BadCap = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC BadProtocol = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC BadValue = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC SeqError = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC BadDest = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC CapUnsupported = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC CapBadOperation = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC CapSeqError = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC Denied = 16 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC FileExists = 17 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC FileNotFound = 18 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC NotEmpty = 19 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC PaperJam = 20 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC PaperDoubleFeed = 21 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC FileWriteError = 22 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC CheckDeviceOnline = 23 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC InterLock = 24 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC DamagedCorner = 25 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC FocusError = 26 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC DocTooLight = 27 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC DocTooDark = 28 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCC NoMedia = 29 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwOn: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwOn Array = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOn Enum = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOn One = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOn Range = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOn DontCare = 65535 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwType Int8 = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Int16 = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Int32 = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType UInt8 = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType UInt16 = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType UInt32 = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Bool = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Fix32 = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Frame = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Str32 = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Str64 = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Str128 = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Str255 = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Str1024 = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Uni512 = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwType Handle = 15 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCap: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCap XferCount = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ICompression = 256 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap IPixelType = 257 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap IUnits = 258 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap IXferMech = 259 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutoBright = 4352 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Brightness = 4353 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Contrast = 4355 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CustHalfTone = 4356 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ExposureTime = 4357 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Filter = 4358 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Flashused = 4359 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Gamma = 4360 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap HalfTones = 4361 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Highlight = 4362 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ImageFileFormat = 4364 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap LampState = 4365 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap LightSource = 4366 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Orientation = 4368 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PhysicalWidth = 4369 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PhysicalHeight = 4370 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Shadow = 4371 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Frames = 4372 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap XNativeResolution = 4374 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap YNativeResolution = 4375 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap XResolution = 4376 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap YResolution = 4377 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap MaxFrames = 4378 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Tiles = 4379 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BitOrder = 4380 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CCITTKFactor = 4381 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap LightPath = 4382 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PixelFlavor = 4383 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PlanarChunky = 4384 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Rotation = 4385 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedSizes = 4386 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Threshold = 4387 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap XScaling = 4388 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap YScaling = 4389 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BitOrderCodes = 4390 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PixelFlavorCodes = 4391 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap JpegPixelType = 4392 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap TimeFill = 4394 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BitDepth = 4395 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BitDepthReduction = 4396 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap UndefinedImageSize = 4397 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ImageDataSet = 4398 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ExtImageInfo = 4399 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap MinimumHeight = 4400 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap MinimumWidth = 4401 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutoDiscardBlankPages = 4404 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FlipRotation = 4406 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BarCodeDetectionEnabled = 4407 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedBarCodeTypes = 4408 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BarCodeMaxSearchPriorities = 4409 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BarCodeSearchPriorities = 4410 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BarCodeSearchMode = 4411 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BarCodeMaxRetries = 4412 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BarCodeTimeout = 4413 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ZoomFactor = 4414 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PatchCodeDetectionEnabled = 4415 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedPatchCodeTypes = 4416 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PatchCodeMaxSearchPriorities = 4417 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PatchCodeSearchPriorities = 4418 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PatchCodeSearchMode = 4419 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PatchCodeMaxRetries = 4420 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PatchCodeTimeout = 4421 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FlashUsed2 = 4422 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ImageFilter = 4423 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap NoiseFilter = 4424 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap OverScan = 4425 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticBorderDetection = 4432 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticDeskew = 4433 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticRotate = 4434 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap JpegQuality = 4435 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederType = 4436 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap IccProfile = 4437 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutoSize = 4438 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticCropUsesFrame = 4439 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticLengthDetection = 4440 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticColorEnabled = 4441 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticColorNonColorPixelType = 4442 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ColorManagementEnabled = 4443 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ImageMerge = 4444 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ImageMergeHeightThreshold = 4445 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedExtimageInfo = 4446 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FilmType = 4447 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Mirror = 4448 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap JpegSubSampling = 4449 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Author = 4096 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Caption = 4097 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederEnabled = 4098 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederLoaded = 4099 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap TimeDate = 4100 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedCaps = 4101 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ExtendedCaps = 4102 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutoFeed = 4103 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ClearPage = 4104 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeedPage = 4105 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap RewindPage = 4106 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Indicators = 4107 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedCapsExt = 4108 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PaperDetectable = 4109 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap UIControllable = 4110 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DeviceOnline = 4111 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutoScan = 4112 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ThumbnailsEnabled = 4113 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Duplex = 4114 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DuplexEnabled = 4115 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap EnableDSUIOnly = 4116 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CustomDSData = 4117 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Endorser = 4118 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap JobControl = 4119 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Alarms = 4120 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AlarmVolume = 4121 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticCapture = 4122 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap TimeBeforeFirstCapture = 4123 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap TimeBetweenCaptures = 4124 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ClearBuffers = 4125 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap MaxBatchBuffers = 4126 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DeviceTimeDate = 4127 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PowerSupply = 4128 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CameraPreviewUI = 4129 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DeviceEvent = 4130 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SerialNumber = 4132 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Printer = 4134 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterEnabled = 4135 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterIndex = 4136 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterMode = 4137 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterString = 4138 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterSuffix = 4139 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Language = 4140 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederAlignment = 4141 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederOrder = 4142 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap ReacquireAllowed = 4144 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BatteryMinutes = 4146 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap BatteryPercentage = 4147 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CameraSide = 4148 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap Segmented = 4149 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CameraEnabled = 4150 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CameraOrder = 4151 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap MicrEnabled = 4152 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederPrep = 4153 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap FeederPocket = 4154 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap AutomaticSenseMedium = 4155 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap CustomInterfaceGuid = 4156 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedCapsSegmentUnique = 4157 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap SupportedDats = 4158 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DoubleFeedDetection = 4159 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DoubleFeedDetectionLength = 4160 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DoubleFeedDetectionSensitivity = 4161 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap DoubleFeedDetectionResponse = 4162 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PaperHandling = 4163 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap IndicatorsMode = 4164 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterVerticalOffset = 4165 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PowerSaveTime = 4166 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterCharRotation = 4167 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterFontStyle = 4168 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterIndexLeadChar = 4169 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterIndexMaxValue = 4170 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterIndexNumDigits = 4171 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterIndexStep = 4172 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterIndexTrigger = 4173 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCap PrinterStringPreview = 4174 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwQC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwQC Get = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC Set = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC GetDefault = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC GetCurrent = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC Reset = 16 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC SetConstraint = 32 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC ConstrainAble = 64 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC GetHelp = 256 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC GetLabel = 512 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwQC GetLabelEnum = 1024 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwLanguage: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwLanguage DANISH = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage DUTCH = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FRENCH_CANADIAN = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FINNISH = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FRENCH = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GERMAN = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ICELANDIC = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ITALIAN = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage NORWEGIAN = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage PORTUGUESE = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SPANISH = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SWEDISH = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_USA = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage AFRIKAANS = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ALBANIA = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC = 16 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_ALGERIA = 17 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_BAHRAIN = 18 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_EGYPT = 19 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_IRAQ = 20 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_JORDAN = 21 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_KUWAIT = 22 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_LEBANON = 23 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_LIBYA = 24 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_MOROCCO = 25 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_OMAN = 26 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_QATAR = 27 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_SAUDIARABIA = 28 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_SYRIA = 29 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_TUNISIA = 30 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_UAE = 31 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ARABIC_YEMEN = 32 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage BASQUE = 33 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage BYELORUSSIAN = 34 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage BULGARIAN = 35 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CATALAN = 36 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE = 37 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE_HONGKONG = 38 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE_PRC = 39 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE_SINGAPORE = 40 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE_SIMPLIFIED = 41 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE_TAIWAN = 42 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CHINESE_TRADITIONAL = 43 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CROATIA = 44 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage CZECH = 45 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage DUTCH_BELGIAN = 46 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_AUSTRALIAN = 47 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_CANADIAN = 48 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_IRELAND = 49 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_NEWZEALAND = 50 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_SOUTHAFRICA = 51 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ENGLISH_UK = 52 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ESTONIAN = 53 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FAEROESE = 54 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FARSI = 55 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FRENCH_BELGIAN = 56 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FRENCH_LUXEMBOURG = 57 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage FRENCH_SWISS = 58 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GERMAN_AUSTRIAN = 59 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GERMAN_LUXEMBOURG = 60 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GERMAN_LIECHTENSTEIN = 61 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GERMAN_SWISS = 62 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GREEK = 63 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage HEBREW = 64 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage HUNGARIAN = 65 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage INDONESIAN = 66 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ITALIAN_SWISS = 67 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage JAPANESE = 68 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage KOREAN = 69 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage KOREAN_JOHAB = 70 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage LATVIAN = 71 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage LITHUANIAN = 72 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage NORWEGIAN_BOKMAL = 73 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage NORWEGIAN_NYNORSK = 74 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage POLISH = 75 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage PORTUGUESE_BRAZIL = 76 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ROMANIAN = 77 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage RUSSIAN = 78 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SERBIAN_LATIN = 79 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SLOVAK = 80 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SLOVENIAN = 81 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SPANISH_MEXICAN = 82 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SPANISH_MODERN = 83 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage THAI = 84 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage TURKISH = 85 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage UKRANIAN = 86 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ASSAMESE = 87 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage BENGALI = 88 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage BIHARI = 89 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage BODO = 90 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage DOGRI = 91 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage GUJARATI = 92 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage HARYANVI = 93 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage HINDI = 94 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage KANNADA = 95 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage KASHMIRI = 96 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage MALAYALAM = 97 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage MARATHI = 98 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage MARWARI = 99 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage MEGHALAYAN = 100 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage MIZO = 101 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage NAGA = 102 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage ORISSI = 103 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage PUNJABI = 104 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage PUSHTU = 105 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SERBIAN_CYRILLIC = 106 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SIKKIMI = 107 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage SWEDISH_FINLAND = 108 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage TAMIL = 109 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage TELUGU = 110 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage TRIPURI = 111 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage URDU = 112 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLanguage VIETNAMESE = 113 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCountry: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCountry AFGHANISTAN = 1001 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ALGERIA = 213 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry AMERICANSAMOA = 684 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ANDORRA = 33 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ANGOLA = 1002 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ANGUILLA = 8090 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ANTIGUA = 8091 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ARGENTINA = 54 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ARUBA = 297 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ASCENSIONI = 247 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry AUSTRALIA = 61 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry AUSTRIA = 43 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BAHAMAS = 8092 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BAHRAIN = 973 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BANGLADESH = 880 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BARBADOS = 8093 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BELGIUM = 32 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BELIZE = 501 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BENIN = 229 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BERMUDA = 8094 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BHUTAN = 1003 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BOLIVIA = 591 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BOTSWANA = 267 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BRITAIN = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BRITVIRGINIS = 8095 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BRAZIL = 55 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BRUNEI = 673 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BULGARIA = 359 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BURKINAFASO = 1004 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BURMA = 1005 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BURUNDI = 1006 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CAMAROON = 237 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CANADA = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CAPEVERDEIS = 238 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CAYMANIS = 8096 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CENTRALAFREP = 1007 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CHAD = 1008 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CHILE = 56 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CHINA = 86 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CHRISTMASIS = 1009 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry COCOSIS = 1009 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry COLOMBIA = 57 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry COMOROS = 1010 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CONGO = 1011 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry COOKIS = 1012 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry COSTARICA = 506 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CUBA = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CYPRUS = 357 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CZECHOSLOVAKIA = 42 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry DENMARK = 45 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry DJIBOUTI = 1013 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry DOMINICA = 8097 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry DOMINCANREP = 8098 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry EASTERIS = 1014 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ECUADOR = 593 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry EGYPT = 20 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ELSALVADOR = 503 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry EQGUINEA = 1015 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ETHIOPIA = 251 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FALKLANDIS = 1016 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FAEROEIS = 298 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FIJIISLANDS = 679 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FINLAND = 358 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FRANCE = 33 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FRANTILLES = 596 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FRGUIANA = 594 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FRPOLYNEISA = 689 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry FUTANAIS = 1043 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GABON = 241 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GAMBIA = 220 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GERMANY = 49 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GHANA = 233 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GIBRALTER = 350 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GREECE = 30 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GREENLAND = 299 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GRENADA = 8099 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GRENEDINES = 8015 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUADELOUPE = 590 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUAM = 671 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUANTANAMOBAY = 5399 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUATEMALA = 502 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUINEA = 224 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUINEABISSAU = 1017 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GUYANA = 592 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry HAITI = 509 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry HONDURAS = 504 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry HONGKONG = 852 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry HUNGARY = 36 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ICELAND = 354 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry INDIA = 91 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry INDONESIA = 62 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry IRAN = 98 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry IRAQ = 964 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry IRELAND = 353 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ISRAEL = 972 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ITALY = 39 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry IVORYCOAST = 225 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry JAMAICA = 8010 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry JAPAN = 81 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry JORDAN = 962 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry KENYA = 254 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry KIRIBATI = 1018 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry KOREA = 82 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry KUWAIT = 965 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LAOS = 1019 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LEBANON = 1020 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LIBERIA = 231 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LIBYA = 218 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LIECHTENSTEIN = 41 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LUXENBOURG = 352 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MACAO = 853 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MADAGASCAR = 1021 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MALAWI = 265 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MALAYSIA = 60 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MALDIVES = 960 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MALI = 1022 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MALTA = 356 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MARSHALLIS = 692 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MAURITANIA = 1023 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MAURITIUS = 230 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MEXICO = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MICRONESIA = 691 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MIQUELON = 508 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MONACO = 33 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MONGOLIA = 1024 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MONTSERRAT = 8011 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MOROCCO = 212 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MOZAMBIQUE = 1025 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NAMIBIA = 264 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NAURU = 1026 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NEPAL = 977 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NETHERLANDS = 31 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NETHANTILLES = 599 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NEVIS = 8012 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NEWCALEDONIA = 687 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NEWZEALAND = 64 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NICARAGUA = 505 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NIGER = 227 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NIGERIA = 234 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NIUE = 1027 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NORFOLKI = 1028 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NORWAY = 47 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry OMAN = 968 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PAKISTAN = 92 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PALAU = 1029 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PANAMA = 507 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PARAGUAY = 595 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PERU = 51 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PHILLIPPINES = 63 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PITCAIRNIS = 1030 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PNEWGUINEA = 675 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry POLAND = 48 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PORTUGAL = 351 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry QATAR = 974 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry REUNIONI = 1031 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ROMANIA = 40 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry RWANDA = 250 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SAIPAN = 670 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SANMARINO = 39 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SAOTOME = 1033 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SAUDIARABIA = 966 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SENEGAL = 221 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SEYCHELLESIS = 1034 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SIERRALEONE = 1035 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SINGAPORE = 65 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SOLOMONIS = 1036 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SOMALI = 1037 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SOUTHAFRICA = 27 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SPAIN = 34 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SRILANKA = 94 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry STHELENA = 1032 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry STKITTS = 8013 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry STLUCIA = 8014 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry STPIERRE = 508 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry STVINCENT = 8015 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SUDAN = 1038 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SURINAME = 597 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SWAZILAND = 268 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SWEDEN = 46 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SWITZERLAND = 41 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SYRIA = 1039 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TAIWAN = 886 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TANZANIA = 255 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry THAILAND = 66 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TOBAGO = 8016 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TOGO = 228 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TONGAIS = 676 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TRINIDAD = 8016 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TUNISIA = 216 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TURKEY = 90 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TURKSCAICOS = 8017 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry TUVALU = 1040 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry UGANDA = 256 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry USSR = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry UAEMIRATES = 971 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry UNITEDKINGDOM = 44 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry USA = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry URUGUAY = 598 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry VANUATU = 1041 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry VATICANCITY = 39 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry VENEZUELA = 58 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry WAKE = 1042 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry WALLISIS = 1043 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry WESTERNSAHARA = 1044 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry WESTERNSAMOA = 1045 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry YEMEN = 1046 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry YUGOSLAVIA = 38 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ZAIRE = 243 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ZAMBIA = 260 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ZIMBABWE = 263 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ALBANIA = 355 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ARMENIA = 374 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry AZERBAIJAN = 994 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BELARUS = 375 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry BOSNIAHERZGO = 387 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CAMBODIA = 855 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CROATIA = 385 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry CZECHREPUBLIC = 420 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry DIEGOGARCIA = 246 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ERITREA = 291 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry ESTONIA = 372 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry GEORGIA = 995 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LATVIA = 371 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LESOTHO = 266 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry LITHUANIA = 370 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MACEDONIA = 389 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MAYOTTEIS = 269 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MOLDOVA = 373 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry MYANMAR = 95 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry NORTHKOREA = 850 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry PUERTORICO = 787 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry RUSSIA = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SERBIA = 381 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SLOVAKIA = 421 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SLOVENIA = 386 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry SOUTHKOREA = 82 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry UKRAINE = 380 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry USVIRGINIS = 340 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCountry VIETNAM = 84 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwUnits: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwUnits Inches = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUnits Centimeters = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUnits Picas = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUnits Points = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUnits Twips = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUnits Pixels = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUnits Millimeters = 6 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPixelType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPixelType BW = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType Gray = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType RGB = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType Palette = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType CMY = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType CMYK = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType YUV = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType YUVK = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType CIEXYZ = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType LAB = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType SRGB = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType SCRGB = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPixelType INFRARED = 16 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCompression: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCompression None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression PackBits = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Group31D = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Group31Deol = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Group32D = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Group4 = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Jpeg = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Lzw = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Jbig = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Png = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Rle4 = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Rle8 = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression BitFields = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Zip = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCompression Jpeg2000 = 14 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwEI: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwEI BarCodeX = 4608 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeY = 4609 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeText = 4610 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeType = 4611 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeTop = 4612 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeLeft = 4613 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeHeight = 4614 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeWidth = 4615 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeSize = 4616 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SpecklesRemoved = 4617 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI HorzLineXCoord = 4618 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI HorzLineYCoord = 4619 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI HorzLineLength = 4620 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI HorzLineThickness = 4621 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI VertLineXCoord = 4622 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI VertLinEYCoord = 4623 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI VertLineLength = 4624 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI VertLineThickness = 4625 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI PatchCode = 4626 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI EndOrSedText = 4627 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FormConfidence = 4628 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FormTemplateMatch = 4629 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FormTemplatePageMatch = 4630 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FormHorzDocOffset = 4631 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FormVertDocOffset = 4632 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeCount = 4633 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeConfidence = 4634 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeRotation = 4635 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BarCodeTextLength = 4636 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeCount = 4637 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeBlackCountOld = 4638 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeBlackCountNew = 4639 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeBlackRLMin = 4640 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeBlackRLMax = 4641 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeWhiteCountOld = 4642 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeWhiteCountNew = 4643 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeWhiteRLMin = 4644 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeWhiteRLAve = 4645 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeshadeWhiteRLMax = 4646 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BlackSpecklesRemoved = 4647 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI WhiteSpecklesRemoved = 4648 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI HorzLineCount = 4649 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI VertLineCount = 4650 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DeskewStatus = 4651 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewOriginalAngle = 4652 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewFinalAngle = 4653 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewConfidence = 4654 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowX1 = 4655 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowY1 = 4656 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowX2 = 4657 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowY2 = 4658 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowX3 = 4659 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowY3 = 4660 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowX4 = 4661 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SkewWindowY4 = 4662 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI BookName = 4664 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI ChapterNumber = 4665 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI DocumentNumber = 4666 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI PageNumber = 4667 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI Camera = 4668 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FrameNumber = 4669 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI Frame = 4670 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI PixelFlavor = 4671 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI IccProFile = 4672 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI LastSegment = 4673 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI SegmentNumber = 4674 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI MagData = 4675 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI MagType = 4676 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI PageSide = 4677 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI FileSystemSource = 4678 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI ImageMerged = 4679 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI MagDataLength = 4680 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI PaperCount = 4681 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwEI PrinterText = 4682 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwSX: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwSX Native = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSX File = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSX Memory = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSX MemFile = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwSS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwSS None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A4Letter = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS B5Letter = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS USLetter = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS USLegal = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A5 = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS B4 = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS B6 = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS USLedger = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS USExecutive = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A3 = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS B3 = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A6 = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C4 = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C5 = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C6 = 16 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS _4A0 = 17 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS _2A0 = 18 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A0 = 19 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A1 = 20 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A2 = 21 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A4 = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A7 = 22 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A8 = 23 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A9 = 24 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS A10 = 25 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB0 = 26 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB1 = 27 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB2 = 28 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB3 = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB4 = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB5 = 29 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB6 = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB7 = 30 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB8 = 31 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB9 = 32 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS ISOB10 = 33 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB0 = 34 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB1 = 35 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB2 = 36 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB3 = 37 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB4 = 38 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB5 = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB6 = 39 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB7 = 40 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB8 = 41 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB9 = 42 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS JISB10 = 43 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C0 = 44 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C1 = 45 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C2 = 46 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C3 = 47 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C7 = 48 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C8 = 49 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C9 = 50 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS C10 = 51 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS USStatement = 52 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSS BusinessCard = 53 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFF Tiff = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Pict = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Bmp = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Xbm = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Jfif = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Fpx = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF TiffMulti = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Png = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Spiff = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Exif = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Pdf = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Jp2 = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Jpx = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF Dejavu = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF PdfA = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFF PdfA2 = 16 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPA: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPA RGB = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPA Gray = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPA CMY = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwDE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwDE CustomEvents = 32768 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE CheckAutomaticCapture = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE CheckBattery = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE CheckDeviceOnline = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE CheckFlash = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE CheckPowerSupply = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE CheckResolution = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE DeviceAdded = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE DeviceOffline = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE DeviceReady = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE DeviceRemoved = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE ImageCaptured = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE ImageDeleted = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE PaperDoubleFeed = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE PaperJam = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE LampFailure = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE PowerSave = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDE PowerSaveNotify = 16 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwDX: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwDX None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDX OnePassDuplex = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDX TwoPassDuplex = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBP: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBP Disable = -2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBP Auto = -1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwAS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwAS None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAS Auto = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAS Current = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFR: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFR Book = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFR Fanfold = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwIM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwIM None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIM FrontOnTop = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIM FrontOnBottom = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIM FrontOnLeft = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIM FrontOnRight = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCS Both = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCS Top = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCS Bottom = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCB: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCB Auto = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCB Clear = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCB NoClear = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBT: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBT Code3Of9 = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code2Of5Interleaved = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code2Of5NonInterleaved = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code93 = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code128 = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Ucc128 = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT CodaBar = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Upca = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Upce = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Ean8 = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Ean13 = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT PostNet = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Pdf417 = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code2Of5Industrial = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code2Of5Matrix = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code2Of5DataLogic = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code2Of5Iata = 16 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT Code3Of9FullAscii = 17 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT CodaBarWithStartStop = 18 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT MaxiCode = 19 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBT QRCode = 20 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBD: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBD Horz = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBD Vert = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBD HorzVert = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBD VertHorz = 3 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFT: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFT Red = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT Green = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT Blue = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT None = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT White = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT Cyan = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT Magenta = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT Yellow = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFT Black = 8 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwIC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwIC None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIC Link = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIC Embed = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPC Chunky = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPC Planar = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBO: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBO LsbFirst = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBO MsbFirst = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwJQ: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwJQ Unknown = -4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJQ Low = -3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJQ Medium = -2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJQ High = -1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwJS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwJS _444Ycbcr = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _444Rgb = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _422 = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _421 = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _411 = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _420 = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _410 = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJS _311 = 7 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPF Chocolate = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPF Vanilla = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFL: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFL None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFL Off = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFL On = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFL Auto = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFL RedEye = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwIF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwIF None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIF Auto = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIF LowPass = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIF BandPass = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIF HighPass = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIF Text = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwIF FineLine = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwLP: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwLP Reflective = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLP Transmissive = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwLS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwLS Red = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLS Green = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLS Blue = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLS None = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLS White = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLS UV = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwLS IR = 6 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwNF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwNF None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwNF Auto = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwNF LonePixel = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwNF MajorityRule = 3 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwOV: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwOV None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOV Auto = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOV TopBottom = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOV LeftRight = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOV All = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwDF: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwDF Ultrasonic = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDF ByLength = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDF Infrared = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwUS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwUS Low = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUS Medium = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwUS High = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwDP: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwDP Stop = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDP StopAndWait = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDP Sound = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwDP DoNotImprint = 3 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPR: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPR ImprinterTopBefore = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR ImprinterTopAfter = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR ImprinterBottomBefore = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR ImprinterBottomAfter = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR EndorserTopBefore = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR EndorserTopAfter = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR EndorserBottomBefore = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPR EndorserBottomAfter = 7 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPM: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPM SingleString = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPM MultiString = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPM CompoundString = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwOR: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwOR Rot0 = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR Rot90 = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR Rot180 = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR Rot270 = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR Portrait = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR Landscape = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR Auto = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR AutoText = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwOR AutoPicture = 6 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBR: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBR Threshold = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBR Halftone = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBR CustHalftone = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBR Diffusion = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBR DynamicThreshold = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwSG: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwSG None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSG Auto = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwSG Manual = 2 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFA: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFA None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFA Left = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFA Center = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFA Right = 3 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFO: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFO FirstPageFirst = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFO LastPageFirst = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFP: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFP PocketError = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket1 = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket2 = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket3 = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket4 = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket5 = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket6 = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket7 = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket8 = 8 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket9 = 9 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket10 = 10 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket11 = 11 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket12 = 12 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket13 = 13 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket14 = 14 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket15 = 15 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFP Pocket16 = 16 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPH: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPH Normal = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPH Fragile = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPH Thick = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPH Trifold = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPH Photograph = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwFE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwFE General = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwFE Photo = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPch: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPch Patch1 = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPch Patch2 = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPch Patch3 = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPch Patch4 = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPch Patch6 = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPch PatchT = 5 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBM1: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBM1 Infinite = -2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBM1 CannotReport = -1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwBM2: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwBM2 Infinite = -2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwBM2 CannotReport = -1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwPS: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwPS External = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwPS Battery = 1 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwJC: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwJC None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJC Jsic = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJC Jsis = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJC Jsxc = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwJC Jsxs = 4 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwCI: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwCI Info = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCI Warning = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCI Error = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwCI WarmUp = 3 : Public, Static, Literal, HasDefault
+Struct Saraff.Twain.DS.TwAL: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    UInt16 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.TwAL Alarm = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL FeederError = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL FeederWarning = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL BarCode = 3 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL DoubleFeed = 4 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL Jam = 5 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL PatchCode = 6 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL Power = 7 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.TwAL Skew = 8 : Public, Static, Literal, HasDefault
+Class Saraff.Twain.DS.TwIdentity: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  Methods:
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class Saraff.Twain.DS.XferEnvironment: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Properties:
+    UInt32 MemXferBufferSize 'get set' : 
+    UInt32 MinMemXferBufferSize 'get ' : 
+    UInt32 MaxMemXferBufferSize 'get ' : 
+    System.String FileXferName 'get set' : 
+    Saraff.Twain.DS.TwFF FileXferFormat 'get set' : 
+    UInt16 PendingXfers 'get set' : 
+    Saraff.Twain.DS.ImageInfo ImageInfo 'get set' : 
+  Methods:
+    get_MemXferBufferSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_MemXferBufferSize(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_MinMemXferBufferSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxMemXferBufferSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_FileXferName(): PrivateScope, Public, HideBySig, SpecialName
+    set_FileXferName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_FileXferFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_FileXferFormat(TwFF): PrivateScope, Public, HideBySig, SpecialName
+    get_PendingXfers(): PrivateScope, Public, HideBySig, SpecialName
+    set_PendingXfers(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageInfo(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageInfo(ImageInfo): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.IoC.BindServiceAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type Service 'get set' : 
+    System.Type ObjectType 'get set' : 
+  Methods:
+    get_Service(): PrivateScope, Public, HideBySig, SpecialName
+    get_ObjectType(): PrivateScope, Public, HideBySig, SpecialName
+Interface Saraff.Twain.DS.IoC.IBinder: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Bind(Type, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bind(Type, Object, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bind(Type, Type): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bind(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bind(Object, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bind(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Load(Assembly): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Saraff.Twain.DS.IoC.IContextBinder`2[TService,TContext]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: TService
+  Type parameter: TContext
+Interface Saraff.Twain.DS.IoC.IInstanceFactory: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    CreateInstance(Type, CtorCallback[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateInstance(CtorCallback[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Saraff.Twain.DS.IoC.CtorCallback: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(CtorCallbackCore): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(CtorCallbackCore, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Saraff.Twain.DS.IoC.CtorCallbackCore: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, Object, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface Saraff.Twain.DS.IoC.IListener: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    OnInvoking(MethodBase, Object, Object[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnInvoked(MethodBase, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnCatch(MethodBase, Object, Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Saraff.Twain.DS.IoC.ProxyRequiredAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Saraff.Twain.DS.IoC.ServiceRequiredAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Saraff.Twain.DS.IoC.Lazy`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed
+  Type parameter: T,  ReferenceType
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface Saraff.Twain.DS.Extensions.ILog: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Write(Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Write(String, LogLevel(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct Saraff.Twain.DS.Extensions.LogLevel: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Saraff.Twain.DS.Extensions.LogLevel None = 0 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.Extensions.LogLevel Info = 1 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.Extensions.LogLevel Warning = 2 : Public, Static, Literal, HasDefault
+    Saraff.Twain.DS.Extensions.LogLevel Error = 3 : Public, Static, Literal, HasDefault
+Class Saraff.Twain.DS.Capabilities.ArrayDataSourceCapability`1[TValue]: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Type parameter: TValue, System.IComparable
+  :Saraff.Twain.DS.DataSourceCapability
+  Properties:
+    System.Object Value 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.BitDepthReductionAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwBR[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwBR[] ReductionMethods 'get set' : 
+  Methods:
+    get_ReductionMethods(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.CompressionAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwCompression[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwCompression[] Compression 'get set' : 
+  Methods:
+    get_Compression(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.CustHalftoneAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Byte[] Matrix 'get set' : 
+  Methods:
+    get_Matrix(): PrivateScope, Public, HideBySig, SpecialName
+Struct Saraff.Twain.DS.Capabilities.DefaultValue`1[T]: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T
+  :System.ValueType
+  Properties:
+    T Value    'get ' : 
+  Methods:
+    op_Implicit(T): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(DefaultValue`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.DevicePropertiesAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single PhysicalHeight 'get set' : 
+    Single PhysicalWidth 'get set' : 
+    Single YNativeResolution 'get set' : 
+    Single XNativeResolution 'get set' : 
+  Methods:
+    get_PhysicalHeight(): PrivateScope, Public, HideBySig, SpecialName
+    get_PhysicalWidth(): PrivateScope, Public, HideBySig, SpecialName
+    get_YNativeResolution(): PrivateScope, Public, HideBySig, SpecialName
+    get_XNativeResolution(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.EnumDataSourceCapability`1[TValue]: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Type parameter: TValue, System.IComparable
+  :Saraff.Twain.DS.DataSourceCapability
+  Properties:
+    System.Object Value 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.HalftonesAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String[] Patterns 'get set' : 
+  Methods:
+    get_Patterns(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.ImageFileFormatAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwFF[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwFF[] SupportedFormats 'get set' : 
+  Methods:
+    get_SupportedFormats(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.LsbFirstSupportedAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Saraff.Twain.DS.Capabilities.OneDataSourceCapability`1[TValue]: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Type parameter: TValue
+  :Saraff.Twain.DS.DataSourceCapability
+  Properties:
+    System.Object Value 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.PixelFlavorAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwPF[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwPF[] Values 'get set' : 
+  Methods:
+    get_Values(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.PixelTypeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwPixelType[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwPixelType[] PixelTypes 'get set' : 
+    Saraff.Twain.DS.TwPixelType DefaultValue 'get set' : 
+  Methods:
+    get_PixelTypes(): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultValue(TwPixelType): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.PlanarChunkyAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Saraff.Twain.DS.TwPC[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Saraff.Twain.DS.TwPC[] Values 'get set' : 
+    Saraff.Twain.DS.TwPC DefaultValue 'get set' : 
+  Methods:
+    get_Values(): PrivateScope, Public, HideBySig, SpecialName
+    get_DefaultValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultValue(TwPC): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.ThresholdAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Value 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.Capabilities.XferMechAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean MemFile 'get set' : 
+    Boolean File 'get set' : 
+  Methods:
+    get_MemFile(): PrivateScope, Public, HideBySig, SpecialName
+    set_MemFile(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_File(): PrivateScope, Public, HideBySig, SpecialName
+    set_File(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class Saraff.Twain.DS.DataSourceServices+Memory: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Alloc(Int32): PrivateScope, Public, Static, HideBySig
+    Free(IntPtr): PrivateScope, Public, Static, HideBySig
+    Lock(IntPtr): PrivateScope, Public, Static, HideBySig
+    Unlock(IntPtr): PrivateScope, Public, Static, HideBySig
+    ZeroMemory(IntPtr, IntPtr): PrivateScope, Public, Static, HideBySig
+Class Saraff.Twain.DS.DataSourceServices+_DsmCallback: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(IntPtr, IntPtr, TwDG, TwDAT, TwMSG, IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(IntPtr, IntPtr, TwDG, TwDAT, TwMSG, IntPtr, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask

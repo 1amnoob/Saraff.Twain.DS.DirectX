@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|c:\\users\\linkdens\\source\\repos\\saraff.twain.ds.directx\\saraff.twain.ds.directx\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|solutionrelative:saraff.twain.ds.directx\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|c:\\users\\linkdens\\source\\repos\\saraff.twain.ds.directx\\saraff.twain.ds.directx\\ui\\datasourceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|solutionrelative:saraff.twain.ds.directx\\ui\\datasourceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8467BC89-BF3A-425A-AECD-828508D2351A}|Saraff.Twain.DS_x64\\Saraff.Twain.DS_x64.vcxproj|C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS_x64\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8467BC89-BF3A-425A-AECD-828508D2351A}|Saraff.Twain.DS_x64\\Saraff.Twain.DS_x64.vcxproj|solutionrelative:Saraff.Twain.DS_x64\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|c:\\users\\linkdens\\source\\repos\\saraff.twain.ds.directx\\saraff.twain.ds.directx\\ui\\datasourceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|solutionrelative:saraff.twain.ds.directx\\ui\\datasourceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|c:\\users\\linkdens\\source\\repos\\saraff.twain.ds.directx\\saraff.twain.ds.directx\\core\\_videodevices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|solutionrelative:saraff.twain.ds.directx\\core\\_videodevices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|c:\\users\\linkdens\\source\\repos\\saraff.twain.ds.directx\\saraff.twain.ds.directx\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9497D33-DB37-4551-B410-768FAEE597F3}|Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX.csproj|solutionrelative:saraff.twain.ds.directx\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DataSourceForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs",
+              "RelativeDocumentMoniker": "Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs",
+              "ToolTip": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:20:48.447Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSourceForm.cs",
+              "DocumentMoniker": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs",
+              "RelativeDocumentMoniker": "Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs",
+              "ToolTip": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs",
+              "RelativeToolTip": "Saraff.Twain.DS.DirectX\\UI\\DataSourceForm.cs",
+              "ViewState": "AgIAACkBAAAAMjMzMzMbwCgBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:10:15.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_VideoDevices.cs",
+              "DocumentMoniker": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\Core\\_VideoDevices.cs",
+              "RelativeDocumentMoniker": "Saraff.Twain.DS.DirectX\\Core\\_VideoDevices.cs",
+              "ToolTip": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\Core\\_VideoDevices.cs",
+              "RelativeToolTip": "Saraff.Twain.DS.DirectX\\Core\\_VideoDevices.cs",
+              "ViewState": "AgIAAF0AAAAgMzMzMzMuwHoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T05:45:49.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Saraff.Twain.DS.DirectX\\Properties\\AssemblyInfo.cs",
               "ToolTip": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS.DirectX\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "Saraff.Twain.DS.DirectX\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAABcAAACAmZmZmZkpwCgAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAACgmZmZmZkpwCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T08:22:27.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS_x64\\main.cpp",
-              "RelativeDocumentMoniker": "Saraff.Twain.DS_x64\\main.cpp",
-              "ToolTip": "C:\\Users\\Linkdens\\source\\repos\\Saraff.Twain.DS.DirectX\\Saraff.Twain.DS_x64\\main.cpp",
-              "RelativeToolTip": "Saraff.Twain.DS_x64\\main.cpp",
-              "ViewState": "AgIAABgAAABAAAAAAAAYwCwAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-13T07:27:27.775Z",
               "EditorCaption": ""
             }
           ]

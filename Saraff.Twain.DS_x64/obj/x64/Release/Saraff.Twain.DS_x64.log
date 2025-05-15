@@ -7,6 +7,6 @@ C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\Insta
 C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   코드를 생성하고 있습니다...
   .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-     C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Release\Saraff.Twain.DS_x64.lib 라이브러리 및 C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Release\Saraff.Twain.DS_x64.exp 개체를 생성하고 있습니다.
+     C:\Users\Linkdens\Source\Repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Release\Saraff.Twain.DS_x64.lib 라이브러리 및 C:\Users\Linkdens\Source\Repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Release\Saraff.Twain.DS_x64.exp 개체를 생성하고 있습니다.
   LINK : /LTCG를 지정했지만 코드를 생성할 필요가 없습니다. 명령줄에서 /LTCG를 제거하면 링커 성능이 향상됩니다.
-  Saraff.Twain.DS_x64.vcxproj -> C:\Users\Linkdens\source\repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Release\Saraff.Twain.DS_x64.ds
+  Saraff.Twain.DS_x64.vcxproj -> C:\Users\Linkdens\Source\Repos\Saraff.Twain.DS.DirectX\Saraff.Twain.DS_x64\bin\x64\Release\Saraff.Twain.DS_x64.ds

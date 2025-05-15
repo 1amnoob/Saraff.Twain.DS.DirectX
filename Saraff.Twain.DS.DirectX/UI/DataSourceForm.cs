@@ -301,10 +301,21 @@ namespace Saraff.Twain.DS.DirectX.UI {
             }
         }
 
-        private void _AcquireClick(object sender, EventArgs e) {
-            try {
-                this.VideoDevices().SimulateTrigger();
-            } catch(Exception ex) {
+        private void _AcquireClick(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var bmp = this.player.GetCurrentVideoFrame())
+                {
+                    if (bmp == null) return;
+
+                    bmp.RotateFlip(this._CurrentRotateFlipTypeView.RotateFlipType);
+                    var id = this.AcquiredImages.Add((Bitmap)bmp.Clone());
+                    this._AddThumbnail(id);
+                }
+            }
+            catch (Exception ex)
+            {
                 this.Log?.Write(ex);
             }
         }
@@ -383,6 +394,16 @@ namespace Saraff.Twain.DS.DirectX.UI {
                 RotateFlipType.Rotate270FlipY 
             }.Contains(this.RotateFlipType);
         }
+
+        //private void label1_Click(object sender, EventArgs e)
+        //{
+        //
+        //}
+
+        //private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //
+        //}
 
         //private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         //{
