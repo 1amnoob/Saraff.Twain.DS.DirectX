@@ -1,0 +1,25 @@
+name: Build Advanced INstaller Visual Studio Project (AIPROJ)
+on: [workflow_dispatch]
+jobs:
+  aiproj-demo:
+    runs-on: windows-latest
+    name: Build Visual Studio Project (aiproj)
+    
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+        
+      - name: Deploy latest advinst version
+        uses: 1amnoob/Saraff.Twain.DS.DirectX/Saraff.Twain.DS.DirectX.Installer_x86@main
+        
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+      
+      - name: Build app
+        run: msbuild ${{ github.workspace }}\MyEdit\MyEdit.sln
+        
+      - name: Publish setup artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: MyAwesomeApp-Setup
+          path: ${{ github.workspace }}\MyEdit\MyEdit Installer\MyEdit Installer-SetupFiles\MyEdit Installer.msi 
