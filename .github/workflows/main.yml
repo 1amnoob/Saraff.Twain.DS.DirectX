@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Deploy latest advinst version
-        uses: 1amnoob/Saraff.Twain.DS.DirectX/Saraff.Twain.DS.DirectX.Installer_x86@main
+        uses: 1amnoob/Saraff.Twain.DS.DirectX@main
         
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
