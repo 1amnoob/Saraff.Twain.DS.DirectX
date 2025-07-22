@@ -90,7 +90,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
                 this.VideoDevices().SnapshotFrame += this._FrameHandler;
                 this._Connect();
-                //this._IsTransferImmediately = this.PersistentService?.IsTransferImmediately ?? false;
+                this._IsTransferImmediately = this.PersistentService?.IsTransferImmediately ?? false;
             } catch(Exception ex) {
                 this.Log?.Write(ex);
             }
@@ -102,7 +102,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
                 this.VideoDevices().SnapshotFrame -= this._FrameHandler;
 
                 if(this.PersistentService != null) {
-                    //this.PersistentService.IsTransferImmediately = this._IsTransferImmediately;
+                    this.PersistentService.IsTransferImmediately = this._IsTransferImmediately;
                     this.PersistentService.SourceSnapshotResolution = this._CurrentShapshotView?.Value.FrameSize ?? Size.Empty;
                     this.PersistentService.RotateFlipType = this._CurrentRotateFlipTypeView.RotateFlipType;
                 }
@@ -128,9 +128,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
                 var _image = e.Frame.Clone() as Bitmap;
                 _image.RotateFlip(this._CurrentRotateFlipTypeView.RotateFlipType);
                 this._AddThumbnail(this.AcquiredImages.Add(_image));
-                //if(this._IsTransferImmediately) {
-                //    this.OnDoneCallback(EventArgs.Empty);
-                //}
+                if(this._IsTransferImmediately) {
+                    this.OnDoneCallback(EventArgs.Empty);
+                }
             } catch(Exception ex) {
                 this.Log?.Write(ex);
             }
@@ -217,10 +217,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
         #region Properties
 
-        //private bool _IsTransferImmediately {
-        //    get => this.transferImmediatelyCheckBox.Checked;
-        //    set => this.transferImmediatelyCheckBox.Checked = value;
-        //}
+        private bool _IsTransferImmediately {
+            get => this.transferImmediatelyCheckBox.Checked;
+            set => this.transferImmediatelyCheckBox.Checked = value;
+        }
 
         private FilterInfoView _CurrentFilterInfoView => this.filterInfoViewBindingSource.Current as FilterInfoView;
 
