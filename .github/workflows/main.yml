@@ -19,7 +19,7 @@ jobs:
         run: msbuild ${{ github.workspace }}\MyEdit\MyEdit.sln
         
       - name: Publish setup artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: MyEdit-Setup
           path: ${{ github.workspace }}\MyEdit\MyEdit Installer\MyEdit Installer-SetupFiles\MyEdit Installer.msi 
