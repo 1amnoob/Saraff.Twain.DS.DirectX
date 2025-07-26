@@ -68,6 +68,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.videoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.snapshotBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.transferImmediatelyCheckBox = new System.Windows.Forms.CheckBox();
             this.rotateFlipTypeViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -217,6 +218,18 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.snapshotBindingSource.DataSource = typeof(Saraff.Twain.DS.DirectX.UI.DataSourceForm.CapabilityView);
             // 
+            // transferImmediatelyCheckBox
+            // 
+            this.transferImmediatelyCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.transferImmediatelyCheckBox.AutoSize = true;
+            this.transferImmediatelyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transferImmediatelyCheckBox.Location = new System.Drawing.Point(12, 462);
+            this.transferImmediatelyCheckBox.Name = "transferImmediatelyCheckBox";
+            this.transferImmediatelyCheckBox.Size = new System.Drawing.Size(181, 17);
+            this.transferImmediatelyCheckBox.TabIndex = 2;
+            this.transferImmediatelyCheckBox.Text = "Transfer immediately after acquire";
+            this.transferImmediatelyCheckBox.UseVisualStyleBackColor = true;
+            // 
             // rotateFlipTypeViewBindingSource
             // 
             this.rotateFlipTypeViewBindingSource.DataSource = typeof(Saraff.Twain.DS.DirectX.UI.DataSourceForm.RotateFlipTypeView);
@@ -225,6 +238,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.transferImmediatelyCheckBox);
             this.ClientSize = new System.Drawing.Size(1137, 680);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.acquireButton);
@@ -257,7 +271,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private System.Windows.Forms.Button acquireButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        //private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
+        private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
         private System.Windows.Forms.BindingSource filterInfoViewBindingSource;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.BindingSource snapshotBindingSource;
