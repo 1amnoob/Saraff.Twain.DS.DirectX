@@ -224,7 +224,6 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.transferImmediatelyCheckBox.AutoSize = true;
             this.transferImmediatelyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transferImmediatelyCheckBox.Location = new System.Drawing.Point(12, 462);
-            this.transferImmediatelyCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.transferImmediatelyCheckBox.Name = "transferImmediatelyCheckBox";
             this.transferImmediatelyCheckBox.Size = new System.Drawing.Size(181, 17);
             this.transferImmediatelyCheckBox.TabIndex = 2;
