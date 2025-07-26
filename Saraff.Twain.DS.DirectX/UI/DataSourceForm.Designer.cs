@@ -87,7 +87,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.player.Location = new System.Drawing.Point(0, 0);
             this.player.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(908, 534);
+            this.player.Size = new System.Drawing.Size(493, 386);
             this.player.TabIndex = 0;
             this.player.VideoSource = null;
             this.player.NewFrame += new AForge.Controls.VideoSourcePlayer.NewFrameHandler(this._PlayerNewFrame);
