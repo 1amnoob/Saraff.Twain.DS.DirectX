@@ -97,7 +97,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            //this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer1.Panel2Collapsed = true;
+            this.splitContainer1.Panel2.Hide();
             this.splitContainer1.Location = new System.Drawing.Point(20, 89);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.splitContainer1.Name = "splitContainer1";
@@ -110,8 +112,8 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.splitContainer1.Panel2.Controls.Add(this.flowLayoutPanel1);
             this.splitContainer1.Size = new System.Drawing.Size(1097, 534);
-            this.splitContainer1.SplitterDistance = 908;
-            this.splitContainer1.SplitterWidth = 7;
+            //this.splitContainer1.SplitterDistance = 908;
+            //this.splitContainer1.SplitterWidth = 7;
             this.splitContainer1.TabIndex = 4;
             // 
             // flowLayoutPanel1
@@ -119,9 +121,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            //this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 534);
+            //this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 534);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // doneButton
