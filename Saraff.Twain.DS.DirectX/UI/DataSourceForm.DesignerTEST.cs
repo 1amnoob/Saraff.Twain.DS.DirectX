@@ -85,7 +85,6 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.player.Dock = System.Windows.Forms.DockStyle.Fill;
             this.player.Location = new System.Drawing.Point(0, 0);
-            this.player.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(493, 386);
             this.player.TabIndex = 0;
@@ -100,8 +99,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             //this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.Panel2Collapsed = true;
             this.splitContainer1.Panel2.Hide();
-            this.splitContainer1.Location = new System.Drawing.Point(20, 89);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.splitContainer1.Location = new System.Drawing.Point(12, 64);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -111,7 +109,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.flowLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1097, 534);
+            this.splitContainer1.Size = new System.Drawing.Size(658, 386);
             //this.splitContainer1.SplitterDistance = 908;
             //this.splitContainer1.SplitterWidth = 7;
             this.splitContainer1.TabIndex = 4;
@@ -130,10 +128,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.doneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.doneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doneButton.Location = new System.Drawing.Point(992, 631);
-            this.doneButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.doneButton.Location = new System.Drawing.Point(595, 456);
             this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(125, 32);
+            this.doneButton.Size = new System.Drawing.Size(75, 23);
             this.doneButton.TabIndex = 1;
             this.doneButton.Text = "Done";
             this.doneButton.UseVisualStyleBackColor = true;
@@ -143,10 +140,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.acquireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.acquireButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acquireButton.Location = new System.Drawing.Point(857, 631);
-            this.acquireButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.acquireButton.Location = new System.Drawing.Point(514, 456);
             this.acquireButton.Name = "acquireButton";
-            this.acquireButton.Size = new System.Drawing.Size(125, 32);
+            this.acquireButton.Size = new System.Drawing.Size(75, 23);
             this.acquireButton.TabIndex = 0;
             this.acquireButton.Text = "Acquire";
             this.acquireButton.UseVisualStyleBackColor = true;
@@ -161,10 +157,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(10, 26);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox1.Location = new System.Drawing.Point(6, 19);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(487, 26);
+            this.comboBox1.Size = new System.Drawing.Size(294, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // filterInfoViewBindingSource
@@ -178,11 +173,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.groupBox1.Controls.Add(this.comboBox4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Location = new System.Drawing.Point(20, 17);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1097, 64);
+            this.groupBox1.Size = new System.Drawing.Size(658, 46);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Device";
@@ -195,10 +189,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(577, 26);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.comboBox4.Location = new System.Drawing.Point(346, 19);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(199, 26);
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 4;
             // 
             // videoBindingSource
@@ -209,10 +202,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(510, 30);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Location = new System.Drawing.Point(306, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Video";
             // 
@@ -238,16 +230,15 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // DataSourceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.transferImmediatelyCheckBox);
-            this.ClientSize = new System.Drawing.Size(1137, 680);
+            this.ClientSize = new System.Drawing.Size(682, 491);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.acquireButton);
             this.Controls.Add(this.doneButton);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MinimizeBox = false;
             this.Name = "DataSourceForm";
             this.Text = "DataSourceForm";
