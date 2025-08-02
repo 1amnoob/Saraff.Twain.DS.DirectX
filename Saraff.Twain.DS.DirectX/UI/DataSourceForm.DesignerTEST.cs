@@ -140,7 +140,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.acquireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.acquireButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acquireButton.Location = new System.Drawing.Point(243, 357);
+            this.acquireButton.Location = new System.Drawing.Point(250, 357);
             this.acquireButton.Name = "acquireButton";
             this.acquireButton.Size = new System.Drawing.Size(75, 23);
             this.acquireButton.TabIndex = 0;
@@ -159,7 +159,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(6, 16);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 21);
+            this.comboBox1.Size = new System.Drawing.Size(190, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // filterInfoViewBindingSource
@@ -188,9 +188,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(212, 13);
+            this.comboBox4.Location = new System.Drawing.Point(204, 13);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(180, 21);
+            this.comboBox4.Size = new System.Drawing.Size(190, 21);
             this.comboBox4.TabIndex = 4;
             // 
             // videoBindingSource
@@ -201,7 +201,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(209, 0);
+            this.label2.Location = new System.Drawing.Point(201, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 3;
