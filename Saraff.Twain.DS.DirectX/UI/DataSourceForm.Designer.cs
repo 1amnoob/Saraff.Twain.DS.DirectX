@@ -188,7 +188,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(204, 13);
+            this.comboBox4.Location = new System.Drawing.Point(204, 16);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(190, 21);
             this.comboBox4.TabIndex = 4;
@@ -230,7 +230,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // DataSourceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.transferImmediatelyCheckBox);
             this.ClientSize = new System.Drawing.Size(425, 385);
             this.Controls.Add(this.groupBox1);
