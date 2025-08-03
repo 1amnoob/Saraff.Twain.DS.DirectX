@@ -229,7 +229,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // DataSourceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.transferImmediatelyCheckBox);
             this.ClientSize = new System.Drawing.Size(425, 385);
