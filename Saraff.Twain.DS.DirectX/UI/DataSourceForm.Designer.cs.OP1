@@ -278,7 +278,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private System.Windows.Forms.GroupBox groupBox1;
         //private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
         private System.Windows.Forms.BindingSource filterInfoViewBindingSource;
-        //private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.BindingSource snapshotBindingSource;
         //private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.BindingSource rotateFlipTypeViewBindingSource;
