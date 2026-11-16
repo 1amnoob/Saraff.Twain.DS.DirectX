@@ -56,6 +56,9 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataSourceForm));
+            Screen Screen = Screen.FromPoint(Cursor.Position);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Location = Screen.Bounds.Location;
             this.player = new AForge.Controls.VideoSourcePlayer();
             //this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             //this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -241,11 +244,11 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            //this.Controls.Add(this.transferImmediatelyCheckBox);
             this.MaximumSize = new System.Drawing.Size(336, 344);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.acquireButton);
             this.Controls.Add(this.label1);
+            //this.Controls.Add(this.transferImmediatelyCheckBox);
             //this.Controls.Add(this.doneButton);
             this.Controls.Add(this.player);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
