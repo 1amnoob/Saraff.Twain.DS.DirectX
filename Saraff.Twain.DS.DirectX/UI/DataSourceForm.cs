@@ -52,7 +52,8 @@ namespace Saraff.Twain.DS.DirectX.UI {
         protected override void OnKeyDown(KeyEventArgs e)
         {
             base.OnKeyDown(e);
-            if (e.KeyCode == Keys.Return)
+            if (e.KeyCode == Keys.Space)
+                //// change to key of choice ie Return
             {
                 this._AcquireClick(this, EventArgs.Empty);
                 e.Handled = true;
