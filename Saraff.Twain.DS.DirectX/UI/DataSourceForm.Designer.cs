@@ -60,18 +60,18 @@ namespace Saraff.Twain.DS.DirectX.UI {
             //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             //this.Location = Screen.Bounds.Location;
             this.CenterToScreen();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.filterInfoViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.videoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.player = new AForge.Controls.VideoSourcePlayer();
+            this.acquireButton = new System.Windows.Forms.Button();
             //this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             //this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             //this.doneButton = new System.Windows.Forms.Button();
-            this.acquireButton = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.filterInfoViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.videoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            //this.label2 = new System.Windows.Forms.Label();
+            //this.label1 = new System.Windows.Forms.Label();
             this.snapshotBindingSource = new System.Windows.Forms.BindingSource(this.components);
             //this.transferImmediatelyCheckBox = new System.Windows.Forms.CheckBox();
             this.rotateFlipTypeViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -85,6 +85,24 @@ namespace Saraff.Twain.DS.DirectX.UI {
             ((System.ComponentModel.ISupportInitialize)(this.snapshotBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotateFlipTypeViewBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(320, 40);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Device";
+                       
+            
+            
+            
+            
             // 
             // player
             // 
@@ -171,19 +189,6 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // filterInfoViewBindingSource
             // 
             this.filterInfoViewBindingSource.DataSource = typeof(Saraff.Twain.DS.DirectX.UI.DataSourceForm.FilterInfoView);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 40);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Device";
             // 
             // comboBox4
             // 
