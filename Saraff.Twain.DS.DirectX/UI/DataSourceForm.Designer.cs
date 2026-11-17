@@ -94,7 +94,6 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(320, 240);
             this.player.TabIndex = 3;
-            this.player.TabsStop = false;
             this.player.VideoSource = null;
             this.player.NewFrame += new AForge.Controls.VideoSourcePlayer.NewFrameHandler(this._PlayerNewFrame);
             // 
