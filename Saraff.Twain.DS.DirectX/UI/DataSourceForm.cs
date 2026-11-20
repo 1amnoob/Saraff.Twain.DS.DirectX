@@ -91,7 +91,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
                 this.VideoDevices().SnapshotFrame += this._FrameHandler;
                 this._Connect();
-                this._IsTransferImmediately = true;
+                this._IsTransferImmediately = this.PersistentService?.IsTransferImmediately ?? true;
             } catch(Exception ex) {
                 this.Log?.Write(ex);
             }
@@ -218,7 +218,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
         #region Properties
 
-        private bool _IsTransferImmediately = true;
+       private bool _IsTransferImmediately {
+            get => this.transferImmediatelyCheckBox.Checked;
+            set => this.transferImmediatelyCheckBox.Checked = true;
+        }
         
         private FilterInfoView _CurrentFilterInfoView => this.filterInfoViewBindingSource.Current as FilterInfoView;
 
