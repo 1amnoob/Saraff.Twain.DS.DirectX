@@ -142,12 +142,12 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // acquireButton
             // 
-            this.acquireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.acquireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.acquireButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.acquireButton.Location = new System.Drawing.Point(0, 282);
             // NOOB NOTE: Point (0, 222) for MLG cam
             this.acquireButton.Name = "acquireButton";
-            this.acquireButton.Size = new System.Drawing.Size(75, 23);
+            this.acquireButton.Size = new System.Drawing.Size(320, 23);
             this.acquireButton.TabIndex = 0;
             this.acquireButton.Text = "Space";
             // NOOB NOTE: Enter for MLG cam
