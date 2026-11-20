@@ -56,14 +56,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataSourceForm));
-            //Screen Screen = Screen.FromPoint(Cursor.Position);
-            //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            //this.Location = Screen.Bounds.Location;
-            this.CenterToScreen();
             this.player = new AForge.Controls.VideoSourcePlayer();
             //this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            //this.doneButton = new System.Windows.Forms.Button();
+            this.doneButton = new System.Windows.Forms.Button();
             this.acquireButton = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.filterInfoViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -73,7 +69,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             //this.label2 = new System.Windows.Forms.Label();
             //this.label1 = new System.Windows.Forms.Label();
             this.snapshotBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.transferImmediatelyCheckBox = new System.Windows.Forms.CheckBox();
+            this.transferImmediatelyCheckBox = new System.Windows.Forms.CheckBox();
             this.rotateFlipTypeViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             //((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             //this.splitContainer1.Panel1.SuspendLayout();
@@ -124,25 +120,25 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // flowLayoutPanel1
             // 
-            //this.flowLayoutPanel1.AutoScroll = true;
-            //this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            //this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             //this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            //this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             //this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 534);
-            //this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // doneButton
             // 
-            //this.doneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            //this.doneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            //this.doneButton.Location = new System.Drawing.Point(337, 357);
-            //this.doneButton.Name = "doneButton";
-            //this.doneButton.Size = new System.Drawing.Size(75, 23);
-            //this.doneButton.TabIndex = 1;
-            //this.doneButton.Text = "Done";
-            //this.doneButton.UseVisualStyleBackColor = true;
-            //this.doneButton.Click += new System.EventHandler(this._DoneClick);
+            this.doneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.doneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.doneButton.Location = new System.Drawing.Point(337, 357);
+            this.doneButton.Name = "doneButton";
+            this.doneButton.Size = new System.Drawing.Size(75, 23);
+            this.doneButton.TabIndex = 1;
+            this.doneButton.Text = "Done";
+            this.doneButton.UseVisualStyleBackColor = true;
+            this.doneButton.Click += new System.EventHandler(this._DoneClick);
             // 
             // acquireButton
             // 
@@ -151,7 +147,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.acquireButton.Location = new System.Drawing.Point(0, 282);
             // NOOB NOTE: Point (0, 222) for MLG cam
             this.acquireButton.Name = "acquireButton";
-            this.acquireButton.Size = new System.Drawing.Size(320, 23);
+            this.acquireButton.Size = new System.Drawing.Size(75, 23);
             this.acquireButton.TabIndex = 0;
             this.acquireButton.Text = "Space";
             // NOOB NOTE: Enter for MLG cam
@@ -190,7 +186,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // comboBox4
             // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox4.DataSource = this.videoBindingSource;
             this.comboBox4.DisplayMember = "Name";
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -235,15 +231,15 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // transferImmediatelyCheckBox
             // 
-            //this.transferImmediatelyCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            //this.transferImmediatelyCheckBox.AutoSize = true;
-            //this.transferImmediatelyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            //this.transferImmediatelyCheckBox.Location = new System.Drawing.Point(12, 360);
-            //this.transferImmediatelyCheckBox.Name = "transferImmediatelyCheckBox";
-            //this.transferImmediatelyCheckBox.Size = new System.Drawing.Size(120, 17);
-            //this.transferImmediatelyCheckBox.TabIndex = 2;
-            //this.transferImmediatelyCheckBox.Text = "Transfer Immediately";
-            //this.transferImmediatelyCheckBox.UseVisualStyleBackColor = true;
+            this.transferImmediatelyCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.transferImmediatelyCheckBox.AutoSize = true;
+            this.transferImmediatelyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transferImmediatelyCheckBox.Location = new System.Drawing.Point(12, 360);
+            this.transferImmediatelyCheckBox.Name = "transferImmediatelyCheckBox";
+            this.transferImmediatelyCheckBox.Size = new System.Drawing.Size(120, 17);
+            this.transferImmediatelyCheckBox.TabIndex = 2;
+            this.transferImmediatelyCheckBox.Text = "Transfer Immediately";
+            this.transferImmediatelyCheckBox.UseVisualStyleBackColor = true;
             // 
             // rotateFlipTypeViewBindingSource
             // 
@@ -255,6 +251,11 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.MaximumSize = new System.Drawing.Size(336, 344);
             // NOOB NOTE: Size(336, 284) for MLG cam
+            //Screen Screen = Screen.FromPoint(Cursor.Position);
+            //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            //this.Location = Screen.Bounds.Location;
+            //this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.CenterToScreen();
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.acquireButton);
             //this.Controls.Add(this.label1);
@@ -284,11 +285,11 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
         private AForge.Controls.VideoSourcePlayer player;
         //private System.Windows.Forms.SplitContainer splitContainer1;
-        //private System.Windows.Forms.Button doneButton;
+        private System.Windows.Forms.Button doneButton;
         private System.Windows.Forms.Button acquireButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        //private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
+        private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
         private System.Windows.Forms.BindingSource filterInfoViewBindingSource;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.BindingSource snapshotBindingSource;
