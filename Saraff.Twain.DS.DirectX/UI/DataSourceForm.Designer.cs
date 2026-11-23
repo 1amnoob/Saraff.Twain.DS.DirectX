@@ -59,7 +59,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.player = new AForge.Controls.VideoSourcePlayer();
             //this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.doneButton = new System.Windows.Forms.Button();
+            //this.doneButton = new System.Windows.Forms.Button();
             this.acquireButton = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.filterInfoViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -130,15 +130,15 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // doneButton
             // 
-            this.doneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.doneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doneButton.Location = new System.Drawing.Point(337, 357);
-            this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(75, 23);
-            this.doneButton.TabIndex = 1;
-            this.doneButton.Text = "Done";
-            this.doneButton.UseVisualStyleBackColor = true;
-            this.doneButton.Click += new System.EventHandler(this._DoneClick);
+            //this.doneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            //this.doneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            //this.doneButton.Location = new System.Drawing.Point(337, 357);
+            //this.doneButton.Name = "doneButton";
+            //this.doneButton.Size = new System.Drawing.Size(75, 23);
+            //this.doneButton.TabIndex = 1;
+            //this.doneButton.Text = "Done";
+            //this.doneButton.UseVisualStyleBackColor = true;
+            //this.doneButton.Click += new System.EventHandler(this._DoneClick);
             // 
             // acquireButton
             // 
@@ -150,7 +150,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.acquireButton.Size = new System.Drawing.Size(320, 23);
             this.acquireButton.TabIndex = 0;
             this.acquireButton.Text = "Space";
-            // NOOB NOTE: Enter for MLG cam
+            // NOOB NOTE: "Enter" for MLG cam
             this.acquireButton.UseVisualStyleBackColor = true;
             this.acquireButton.Click += new System.EventHandler(this._AcquireClick);
             // 
@@ -231,15 +231,15 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // transferImmediatelyCheckBox
             // 
-            this.transferImmediatelyCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.transferImmediatelyCheckBox.AutoSize = true;
-            this.transferImmediatelyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transferImmediatelyCheckBox.Location = new System.Drawing.Point(12, 360);
-            this.transferImmediatelyCheckBox.Name = "transferImmediatelyCheckBox";
-            this.transferImmediatelyCheckBox.Size = new System.Drawing.Size(120, 17);
-            this.transferImmediatelyCheckBox.TabIndex = 2;
-            this.transferImmediatelyCheckBox.Text = "Transfer Immediately";
-            this.transferImmediatelyCheckBox.UseVisualStyleBackColor = true;
+            //this.transferImmediatelyCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            //this.transferImmediatelyCheckBox.AutoSize = true;
+            //this.transferImmediatelyCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            //this.transferImmediatelyCheckBox.Location = new System.Drawing.Point(12, 360);
+            //this.transferImmediatelyCheckBox.Name = "transferImmediatelyCheckBox";
+            //this.transferImmediatelyCheckBox.Size = new System.Drawing.Size(120, 17);
+            //this.transferImmediatelyCheckBox.TabIndex = 2;
+            //this.transferImmediatelyCheckBox.Text = "Transfer Immediately";
+            //this.transferImmediatelyCheckBox.UseVisualStyleBackColor = true;
             // 
             // rotateFlipTypeViewBindingSource
             // 
@@ -285,7 +285,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
         private AForge.Controls.VideoSourcePlayer player;
         //private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button doneButton;
+        //private System.Windows.Forms.Button doneButton;
         private System.Windows.Forms.Button acquireButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
