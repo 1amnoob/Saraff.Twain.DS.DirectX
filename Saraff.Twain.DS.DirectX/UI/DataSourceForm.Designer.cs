@@ -120,13 +120,13 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            //this.flowLayoutPanel1.AutoScroll = true;
+            //this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             //this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            //this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             //this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 534);
-            this.flowLayoutPanel1.TabIndex = 0;
+            //this.flowLayoutPanel1.TabIndex = 0;
             // 
             // doneButton
             // 
