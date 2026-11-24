@@ -47,6 +47,11 @@ namespace Saraff.Twain.DS.DirectX.UI {
         public DataSourceForm() {
             this.InitializeComponent();
             this.KeyPreview = true;
+            //Screen Screen = Screen.FromPoint(Cursor.Position);
+            //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            //this.Location = Screen.Bounds.Location;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            //this.CenterToScreen();
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
