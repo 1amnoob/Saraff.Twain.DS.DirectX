@@ -85,10 +85,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // player
             // 
             //this.player.Dock = System.Windows.Forms.DockStyle.Fill;
-            //this.player.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.player.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom)));
             this.player.Location = new System.Drawing.Point(0, 40);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(320, 240);
+            this.player.MaximumSize = new System.Drawing.Size(320, 240);
             // NOOB NOTE: Size(320, 180) for MLG cam
             this.player.TabIndex = 3;
             this.player.VideoSource = null;
@@ -142,7 +142,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // acquireButton
             // 
-            this.acquireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.acquireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.acquireButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.acquireButton.Location = new System.Drawing.Point(0, 282);
             // NOOB NOTE: Point (0, 222) for MLG cam
@@ -156,7 +156,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.DataSource = this.filterInfoViewBindingSource;
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -186,7 +186,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // comboBox4
             // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox4.DataSource = this.videoBindingSource;
             this.comboBox4.DisplayMember = "Name";
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -249,7 +249,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.MaximumSize = new System.Drawing.Size(336, 344);
+            this.ClientSize = new System.Drawing.Size(320, 305);
             // NOOB NOTE: Size(336, 284) for MLG cam
             //Screen Screen = Screen.FromPoint(Cursor.Position);
             //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
