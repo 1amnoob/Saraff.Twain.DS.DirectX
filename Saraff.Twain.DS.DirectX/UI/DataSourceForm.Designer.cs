@@ -84,7 +84,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // groupBox1
             // 
-            this.groupBox1.Dock = System.Windows.Forms.Dockstyle.Top;
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Controls.Add(this.comboBox1);
             //this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox4);
@@ -97,7 +97,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // comboBox1
             // 
-            this.comboBox1.Dock = System.Windows.Forms.Dockstyle.Left;
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.comboBox1.DataSource = this.filterInfoViewBindingSource;
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -114,7 +114,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // comboBox4
             // 
-            this.comboBox4.Dock = System.Windows.Forms.Dockstyle.Right;
+            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Right;
             this.comboBox4.DataSource = this.videoBindingSource;
             this.comboBox4.DisplayMember = "Name";
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -131,7 +131,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // acquireButton
             // 
-            this.acquireButton.Dock = System.Windows.Forms.Dockstyle.Bottom;
+            this.acquireButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.acquireButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             //this.acquireButton.Location = new System.Drawing.Point(0, 282);
             this.acquireButton.Name = "acquireButton";
@@ -284,8 +284,8 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private System.Windows.Forms.BindingSource snapshotBindingSource;
         //private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.BindingSource rotateFlipTypeViewBindingSource;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        //private System.Windows.Forms.Label label2;
+        //private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.BindingSource videoBindingSource;
     }
