@@ -47,13 +47,18 @@ namespace Saraff.Twain.DS.DirectX.UI {
         public DataSourceForm() {
             this.InitializeComponent();
             this.KeyPreview = true;
+            //Screen Screen = Screen.FromPoint(Cursor.Position);
+            //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            //this.Location = Screen.Bounds.Location;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            //this.CenterToScreen();
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
         {
             base.OnKeyDown(e);
             if (e.KeyCode == Keys.Space)
-                //// change to key of choice ie Return
+                //NOOB NOTE: Return for MLG cam
             {
                 this._AcquireClick(this, EventArgs.Empty);
                 e.Handled = true;
@@ -91,7 +96,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
                 this.VideoDevices().SnapshotFrame += this._FrameHandler;
                 this._Connect();
-                this._IsTransferImmediately = true;
+                this._IsTransferImmediately = this.PersistentService?.IsTransferImmediately ?? true;
             } catch(Exception ex) {
                 this.Log?.Write(ex);
             }
@@ -218,7 +223,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
 
         #region Properties
 
-        private bool _IsTransferImmediately = true;
+       private bool _IsTransferImmediately {
+            get => this.transferImmediatelyCheckBox.Checked;
+            set => this.transferImmediatelyCheckBox.Checked = true;
+        }
         
         private FilterInfoView _CurrentFilterInfoView => this.filterInfoViewBindingSource.Current as FilterInfoView;
 
