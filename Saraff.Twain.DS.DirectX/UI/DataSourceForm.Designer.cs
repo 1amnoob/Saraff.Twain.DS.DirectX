@@ -56,10 +56,6 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataSourceForm));
-            //Screen Screen = Screen.FromPoint(Cursor.Position);
-            //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            //this.Location = Screen.Bounds.Location;
-            this.CenterToScreen();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.filterInfoViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -68,12 +64,12 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.player = new AForge.Controls.VideoSourcePlayer();
             this.acquireButton = new System.Windows.Forms.Button();
             //this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            //this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             //this.doneButton = new System.Windows.Forms.Button();
             //this.label2 = new System.Windows.Forms.Label();
             //this.label1 = new System.Windows.Forms.Label();
             this.snapshotBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.transferImmediatelyCheckBox = new System.Windows.Forms.CheckBox();
+            this.transferImmediatelyCheckBox = new System.Windows.Forms.CheckBox();
             this.rotateFlipTypeViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             //((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             //this.splitContainer1.Panel1.SuspendLayout();
@@ -248,7 +244,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(320, 305);
+            this.MaximumSize = new System.Drawing.Size(320, 305);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.acquireButton);
             //this.Controls.Add(this.label1);
@@ -282,7 +278,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
         private System.Windows.Forms.Button acquireButton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        //private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
+        private System.Windows.Forms.CheckBox transferImmediatelyCheckBox;
         private System.Windows.Forms.BindingSource filterInfoViewBindingSource;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.BindingSource snapshotBindingSource;
