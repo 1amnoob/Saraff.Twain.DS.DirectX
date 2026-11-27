@@ -58,7 +58,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
         {
             base.OnKeyDown(e);
             if (e.KeyCode == Keys.Space)
-                //NOOB NOTE: Return for MLG cam
+                //NOOB NOTE: or "Return"
             {
                 this._AcquireClick(this, EventArgs.Empty);
                 e.Handled = true;
