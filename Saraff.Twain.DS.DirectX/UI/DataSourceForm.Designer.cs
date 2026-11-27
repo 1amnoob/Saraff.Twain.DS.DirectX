@@ -105,7 +105,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox1.FormattingEnabled = true;
             //this.comboBox1.Location = new System.Drawing.Point(4, 13);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(154, 21);
+            this.comboBox1.Size = new System.Drawing.Size(148, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // filterInfoViewBindingSource
@@ -114,7 +114,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             // 
             // comboBox4
             // 
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Left;
             this.comboBox4.DataSource = this.videoBindingSource;
             this.comboBox4.DisplayMember = "Name";
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -122,7 +122,7 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.comboBox4.FormattingEnabled = true;
             // this.comboBox4.Location = new System.Drawing.Point(162, 13);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(154, 21);
+            this.comboBox4.Size = new System.Drawing.Size(148, 21);
             this.comboBox4.TabIndex = 2;
             // 
             // videoBindingSource
@@ -135,9 +135,10 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.acquireButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             //this.acquireButton.Location = new System.Drawing.Point(0, 282);
             this.acquireButton.Name = "acquireButton";
-            this.acquireButton.Size = new System.Drawing.Size(75, 23);
+            //this.acquireButton.Size = new System.Drawing.Size(75, 23);
             this.acquireButton.TabIndex = 0;
             this.acquireButton.Text = "Space";
+            // NOOB NOTE: or "Enter"
             this.acquireButton.UseVisualStyleBackColor = true;
             this.acquireButton.Click += new System.EventHandler(this._AcquireClick);
             // 
@@ -245,6 +246,11 @@ namespace Saraff.Twain.DS.DirectX.UI {
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.MaximumSize = new System.Drawing.Size(320, 305);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            //this.CenterToScreen();
+            //Screen Screen = Screen.FromPoint(Cursor.Position);
+            //this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            //this.Location = Screen.Bounds.Location;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.acquireButton);
             //this.Controls.Add(this.label1);
